@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second Brain — AI-Powered Personal Knowledge Manager</title>
+  <style>
+    :root {
+      --bg: #f7f7f4;
+      --fg: #26251e;
+      --accent: #f54e00;
+      --card: #f2f1ed;
+      --card-02: #ebeae5;
+      --fg-secondary: rgba(38, 37, 30, 0.6);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14120b;
+        --fg: #edecec;
+        --accent: #f54e00;
+        --card: #1b1913;
+        --card-02: #201e18;
+        --fg-secondary: rgba(237, 236, 236, 0.6);
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    main {
+      max-width: 640px;
+      padding: 80px 24px 64px;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    h1 span { color: var(--accent); }
+    .tagline {
+      font-size: 1.1rem;
+      color: var(--fg-secondary);
+      margin-bottom: 40px;
+    }
+    .section {
+      margin-bottom: 32px;
+    }
+    .section h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--fg-secondary);
+      margin-bottom: 12px;
+    }
+    .section p {
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+    .features {
+      display: grid;
+      gap: 12px;
+    }
+    .feature {
+      background: var(--card);
+      border-radius: 10px;
+      padding: 16px 20px;
+    }
+    .feature strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+    .feature span {
+      color: var(--fg-secondary);
+      font-size: 0.9rem;
+    }
+    footer {
+      margin-top: auto;
+      padding: 24px;
+      color: var(--fg-secondary);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Second <span>Brain</span></h1>
+    <p class="tagline">An AI-powered personal knowledge manager that understands you.</p>
+
+    <div class="section">
+      <h2>What it does</h2>
+      <p>
+        Second Brain connects to the tools you already use — Google Drive, Gmail, Apple Calendar, iMessage, and more — to build a living picture of your projects, priorities, and writing style. Then it helps you get things done with an AI assistant that actually knows your context.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Integrations</h2>
+      <div class="features">
+        <div class="feature">
+          <strong>Google Drive</strong>
+          <span>Reads your documents to understand your projects and writing style. Syncs your Second Brain folder to Drive.</span>
+        </div>
+        <div class="feature">
+          <strong>Gmail</strong>
+          <span>Searches, reads, and sends emails on your behalf through your AI assistant.</span>
+        </div>
+        <div class="feature">
+          <strong>Apple Calendar</strong>
+          <span>Views your schedule and creates events to help you stay on top of things.</span>
+        </div>
+        <div class="feature">
+          <strong>iMessage</strong>
+          <span>Searches your conversations and sends messages through your AI assistant.</span>
+        </div>
+        <div class="feature">
+          <strong>Browser</strong>
+          <span>Navigates the web and reads pages to research topics for you.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Privacy</h2>
+      <p>
+        Your data stays on your machine. Second Brain runs locally and stores everything in a folder on your computer. Read our <a href="privacy.html">Privacy Policy</a> for full details.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a href="/">danyangzhao.com</a>
+  </footer>
+</body>
+</html>
