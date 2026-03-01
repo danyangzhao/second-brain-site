@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — Second Brain</title>
+  <style>
+    :root {
+      --bg: #f7f7f4;
+      --fg: #26251e;
+      --accent: #f54e00;
+      --card: #f2f1ed;
+      --fg-secondary: rgba(38, 37, 30, 0.6);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14120b;
+        --fg: #edecec;
+        --accent: #f54e00;
+        --card: #1b1913;
+        --fg-secondary: rgba(237, 236, 236, 0.6);
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    main {
+      max-width: 640px;
+      padding: 60px 24px 64px;
+    }
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      letter-spacing: -0.02em;
+    }
+    .updated {
+      color: var(--fg-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 36px;
+    }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-top: 32px;
+      margin-bottom: 8px;
+    }
+    p, li { font-size: 1rem; margin-bottom: 10px; }
+    ul { padding-left: 24px; margin-bottom: 12px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: auto;
+      padding: 24px;
+      color: var(--fg-secondary);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    code {
+      background: var(--card);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Terms of Service</h1>
+    <p class="updated">Last updated: March 1, 2026</p>
+
+    <p>
+      These Terms of Service ("Terms") govern your use of Second Brain ("the App"), a personal knowledge management application. By using the App, you agree to these Terms.
+    </p>
+
+    <h2>1. Description of the Service</h2>
+    <p>
+      Second Brain is a locally-installed application that connects to your Google Drive, Gmail, Apple Calendar, Apple Mail, iMessage, and other services to help you organize your knowledge, manage projects, and interact with an AI assistant. The App runs on your device and stores data locally.
+    </p>
+
+    <h2>2. Account and Access</h2>
+    <p>
+      To use the Google integration features, you must authenticate with your Google account through OAuth. You are responsible for maintaining the security of your device and your Google account credentials. You may revoke the App's access to your Google account at any time via <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.
+    </p>
+
+    <h2>3. Acceptable Use</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Use the App to violate any applicable laws or regulations</li>
+      <li>Use the App to send spam, harassing, or unauthorized messages through Gmail or iMessage</li>
+      <li>Reverse engineer, decompile, or attempt to extract the source code of the App</li>
+      <li>Use the App in any way that could damage, disable, or impair the service</li>
+    </ul>
+
+    <h2>4. Third-Party Services</h2>
+    <p>
+      The App integrates with third-party services including Google (Drive, Gmail), Apple (Calendar, Mail, Messages), and Anthropic (Claude AI). Your use of these services is also subject to their respective terms of service and privacy policies. The App is not affiliated with or endorsed by Google, Apple, or Anthropic.
+    </p>
+
+    <h2>5. AI-Generated Content</h2>
+    <p>
+      The App uses Anthropic's Claude API to generate responses, draft emails, and create documents. AI-generated content may contain errors or inaccuracies. You are responsible for reviewing any content before sending emails or publishing documents. The App will always ask for your confirmation before sending messages on your behalf.
+    </p>
+
+    <h2>6. Data and Privacy</h2>
+    <p>
+      Your data is stored locally on your device. Please review our <a href="privacy.html">Privacy Policy</a> for full details on how we access, use, and protect your data.
+    </p>
+
+    <h2>7. Disclaimer of Warranties</h2>
+    <p>
+      The App is provided "as is" and "as available" without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not guarantee that the App will be error-free, secure, or uninterrupted.
+    </p>
+
+    <h2>8. Limitation of Liability</h2>
+    <p>
+      To the maximum extent permitted by law, the developer shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data, use, or profits, arising out of or related to your use of the App. Since the App operates locally on your device, you are responsible for maintaining backups of your data.
+    </p>
+
+    <h2>9. Changes to These Terms</h2>
+    <p>
+      We may update these Terms from time to time. Changes will be posted on this page with an updated date. Continued use of the App after changes constitutes acceptance of the new Terms.
+    </p>
+
+    <h2>10. Termination</h2>
+    <p>
+      You may stop using the App at any time by uninstalling it and deleting the <code>~/.second-brain/</code> and <code>~/SecondBrain/</code> directories. You can revoke Google access at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>
+      If you have questions about these Terms, please contact us at:
+      <a href="mailto:danyang.zhao@gmail.com">danyang.zhao@gmail.com</a>
+    </p>
+  </main>
+
+  <footer>
+    <a href="./">Back to Second Brain</a> · <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</body>
+</html>
