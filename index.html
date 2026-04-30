@@ -79,6 +79,10 @@
       max-width: 560px;
     }
 
+    .intro a {
+      color: var(--fg);
+    }
+
     .section-label {
       font-size: 0.75rem;
       font-weight: 500;
@@ -88,7 +92,8 @@
       margin-bottom: 20px;
     }
 
-    .projects {
+    .projects,
+    .work {
       list-style: none;
       margin-bottom: 64px;
     }
@@ -100,8 +105,38 @@
       border-top: 1px solid var(--border);
     }
 
-    .projects li:last-child {
+    .projects li:last-child,
+    .work li:last-child {
       border-bottom: 1px solid var(--border);
+    }
+
+    .work li {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 16px;
+      padding: 16px 0;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    .work-dates {
+      color: var(--fg-secondary);
+    }
+
+    .work-role {
+      color: var(--fg);
+    }
+
+    .work-role-title {
+      font-weight: 500;
+    }
+
+    @media (max-width: 520px) {
+      .work li {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
     }
 
     .project-dot {
@@ -171,13 +206,20 @@
   </header>
 
   <main>
+    <p class="intro">
+      Hi, I'm Dan. I'm a Product Manager at Meta working on VR developer tools.
+      In my free time, I build apps over at <a href="https://sagebearapps.com">Sage Bear Apps</a>,
+      hack on humanoid <a href="https://www.youtube.com/@GentleRobotics/shorts">robots</a>,
+      and <a href="https://dyz.substack.com/">write</a> about modern product management.
+    </p>
+
     <p class="section-label">Projects</p>
     <ul class="projects">
       <li>
         <span class="project-dot"></span>
         <div class="project-info">
-          <div class="project-name"><a href="/second-brain/">Second Brain</a></div>
-          <div class="project-desc">An AI-powered personal knowledge manager that connects to your Google Drive, Gmail, Calendar, and iMessage to help you get things done.</div>
+          <div class="project-name"><a href="https://sagebearapps.com">Sage Bear Apps</a></div>
+          <div class="project-desc">A small studio for the apps I build, including Spikers (roundnet tracker for iOS) and Second Brain (AI-powered personal knowledge manager).</div>
         </div>
       </li>
       <li>
@@ -187,12 +229,29 @@
           <div class="project-desc">Turn any recipe from the web into an audio file you can listen to while cooking. Uses GPT-4 for parsing and OpenAI TTS for narration.</div>
         </div>
       </li>
+    </ul>
+
+    <p class="section-label">Work</p>
+    <ul class="work">
       <li>
-        <span class="project-dot"></span>
-        <div class="project-info">
-          <div class="project-name"><a href="/spikers/">Spikers</a></div>
-          <div class="project-desc">A roundnet session tracker for iOS. Schedule sessions, log games, track ELO ratings, and run tournaments with your crew.</div>
-        </div>
+        <span class="work-dates">2021 — Present</span>
+        <span class="work-role"><span class="work-role-title">Product Manager, Meta</span> &middot; PM for VR developer tooling and platform growth.</span>
+      </li>
+      <li>
+        <span class="work-dates">2020 — 2021</span>
+        <span class="work-role"><span class="work-role-title">Product Manager, Homebase</span> &middot; Built features connecting local workers with jobs.</span>
+      </li>
+      <li>
+        <span class="work-dates">2019</span>
+        <span class="work-role"><span class="work-role-title">Senior Product Manager, JUUL Labs</span> &middot; Led e-commerce product initiatives.</span>
+      </li>
+      <li>
+        <span class="work-dates">2018 — 2019</span>
+        <span class="work-role"><span class="work-role-title">Product Manager, Entelo</span> &middot; Developed recruiting tools connecting people to jobs.</span>
+      </li>
+      <li>
+        <span class="work-dates">2016 — 2017</span>
+        <span class="work-role"><span class="work-role-title">Associate Product Manager, Roblox</span> &middot; Worked on mobile and growth-focused product improvements.</span>
       </li>
     </ul>
 
