@@ -140,7 +140,17 @@
   </main>
 
   <footer>
-    <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a href="/">danyangzhao.com</a>
+    <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a id="contact-link" href="#" rel="nofollow">Contact</a> · <a href="/">danyangzhao.com</a>
+    <noscript> · dan [at] gentlerobotics [dot] net</noscript>
   </footer>
+  <script>
+    (function () {
+      var user = 'dan';
+      var domain = 'gentlerobotics' + '.' + 'net';
+      var link = document.getElementById('contact-link');
+      if (!link) return;
+      link.href = 'mailto:' + user + '@' + domain + '?subject=' + encodeURIComponent('Spikers');
+    })();
+  </script>
 </body>
 </html>
